@@ -3,7 +3,7 @@ import { db } from './firebase';
 import { addDoc, collection } from 'firebase/firestore';
 
 
-const AppForm = () => {
+const AppForm = (props) => {
  //////GUARDAR / ACTUALIZAR ////
  const campoRegistro = { nombre:"", edad:"", genero:""}
  const [objeto, setObjeto] = useState(campoRegistro);
